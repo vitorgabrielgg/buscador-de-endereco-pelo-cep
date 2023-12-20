@@ -1,0 +1,45 @@
+#address{
+    @include centerContainer();
+    max-width: 900px;
+    margin-top: 20px;
+    
+    h2{
+        font-weight: 700;
+        font-size: min(5vw,1.5rem);
+        margin-bottom: 10px;
+    }
+
+    #box-table{
+        overflow-x: auto;
+        margin-bottom: 40px;
+
+        table{
+            border-collapse: collapse;
+            text-align: left;
+            width: 100%;
+            border-radius: 3px;
+            overflow: hidden;
+
+            td,th{
+                border: 1px solid #597081;
+                padding: 10px 5px;
+            }
+
+            th{
+                background: #597081;
+                color: #fff;
+            }
+
+            td{
+                color: #36494E;
+            }
+        }
+    }
+}
+
+.buscar{
+    background: #597081;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

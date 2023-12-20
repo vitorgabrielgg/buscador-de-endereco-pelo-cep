@@ -1,0 +1,33 @@
+#insert-cep{
+    @include centerContainer();
+    max-width: 900px;
+
+    h1{
+        font-size: min(7vw,2.5rem);
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    #input-cep{
+        display: grid;
+
+        label{
+            color: #36494E;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        input{
+            padding: 10px;
+            border: 2px solid #597081;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        a{
+            max-width: 95px;
+            text-align: center;
+        }
+    }
+}

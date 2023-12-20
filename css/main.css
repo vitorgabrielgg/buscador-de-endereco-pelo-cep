@@ -2,12 +2,108 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
 }
 
 body {
   background: #A9CEF4;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
   text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px 0;
+}
+
+#insert-cep {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+#insert-cep h1 {
+  font-size: min(7vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#insert-cep #input-cep {
+  display: grid;
+}
+#insert-cep #input-cep label {
+  color: #36494E;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+#insert-cep #input-cep input {
+  padding: 10px;
+  border: 2px solid #597081;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#insert-cep #input-cep a {
+  max-width: 95px;
+  text-align: center;
+}
+
+#address {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+  max-width: 900px;
+  margin-top: 20px;
+}
+#address h2 {
+  font-weight: 700;
+  font-size: min(5vw, 1.5rem);
+  margin-bottom: 10px;
+}
+#address #box-table {
+  overflow-x: auto;
+  margin-bottom: 40px;
+}
+#address #box-table table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+#address #box-table table td, #address #box-table table th {
+  border: 1px solid #597081;
+  padding: 10px 5px;
+}
+#address #box-table table th {
+  background: #597081;
+  color: #fff;
+}
+#address #box-table table td {
+  color: #36494E;
+}
+
+.buscar {
+  background: #597081;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
 }/*# sourceMappingURL=main.css.map */

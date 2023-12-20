@@ -1,3 +1,7 @@
 $bg-color: #A9CEF4;
+$bg-container: #fff;
 
-@import 'base'
+@import 'base';
+@import 'container';
+@import 'insert';
+@import 'address';

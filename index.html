@@ -6,34 +6,40 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <section id="container">
-        <h1>Busca CEP</h1>
-
-        <div id="input-cep">
-            <label for="">Digite um CEP para buscar seu endereço:</label>
-            <input type="text" max="8">
+        <div id="insert-cep">
+            <h1>Busca CEP</h1>
+            <div id="input-cep">
+                <label for="">Digite um CEP para buscar seu endereço:</label>
+                <input type="text" max="8">
+                <a class="buscar" href="#">Busca</a>
+            </div>
         </div>
 
-        <div id="endereco">
+        <div id="address" class="hide">
             <h2>Resultados da busca: </h2>
-            <table>
-                <thead>
-                    <th>Logradouro/Rua</th>
-                    <th>Bairro</th>
-                    <th>Estado/UF</th>
-                    <th>CEP</th>
-                </thead>
-                <tbody>
-                    <td>dergrrggr</td>
-                    <td>dergrrggr</td>
-                    <td>dergrrggr</td>
-                    <td>dergrrggr</td>
-                </tbody>
-            </table>
 
-            <a href="#">Buscar novamente</a>
+            <div id="box-table">
+                <table>
+                    <thead>
+                        <th>Logradouro/Rua</th>
+                        <th>Bairro</th>
+                        <th>Estado/UF</th>
+                        <th>CEP</th>
+                    </thead>
+                    <tbody>
+                        <td>dergrrggr</td>
+                        <td>dergrrggr</td>
+                        <td>dergrrggr</td>
+                        <td>dergrrggr</td>
+                    </tbody>
+                </table>
+            </div>
+
+            <a class="buscar" href="#">Buscar novamente</a>
         </div>
     </section>
 </body>
