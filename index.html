@@ -13,9 +13,9 @@
         <div id="insert-cep">
             <h1>Busca CEP</h1>
             <div id="input-cep">
-                <label for="">Digite um CEP para buscar seu endereço:</label>
-                <input type="text" max="8">
-                <a class="buscar" href="#">Busca</a>
+                <label for="cep">Digite um CEP para buscar seu endereço:</label>
+                <input type="text" maxlength="8" id="cep">
+                <a class="buscar" onclick="mostrar()" href="#">Busca</a>
             </div>
         </div>
 
@@ -32,19 +32,23 @@
                             <th>CEP</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tbody">
+                        <!--
                         <tr>
                             <td>dergrrggr</td>
                             <td>dergrrggr</td>
                             <td>dergrrggr</td>
                             <td>dergrrggr</td>
                         </tr>
+                        -->
                     </tbody>
                 </table>
             </div>
 
-            <a class="buscar" href="#">Buscar novamente</a>
+            <a onclick="buscarNovamente()" class="buscar" href="#">Buscar novamente</a>
         </div>
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
