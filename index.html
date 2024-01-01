@@ -1,54 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consultar CEP</title>
 
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <section id="container">
-        <div id="insert-cep">
-            <h1>Busca CEP</h1>
-            <div id="input-cep">
-                <label for="cep">Digite um CEP para buscar seu endereço:</label>
-                <input type="text" maxlength="8" id="cep">
-                <a class="buscar" onclick="mostrar()" href="#">Busca</a>
-            </div>
+      <div id="insert-cep">
+        <h1>Busca CEP</h1>
+        <div id="input-cep">
+          <label for="cep">Digite um CEP para buscar seu endereço:</label>
+          <input type="text" maxlength="8" id="cep" />
+          <a class="buscar" onclick="mostrar()" href="#">Busca</a>
+        </div>
+      </div>
+
+      <div id="address" class="hide">
+        <h2>Resultados da busca:</h2>
+
+        <div id="box-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Logradouro/Rua</th>
+                <th>Bairro</th>
+                <th>Estado/UF</th>
+                <th>CEP</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
         </div>
 
-        <div id="address" class="hide">
-            <h2>Resultados da busca: </h2>
-
-            <div id="box-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Logradouro/Rua</th>
-                            <th>Bairro</th>
-                            <th>Estado/UF</th>
-                            <th>CEP</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbody">
-                        <!--
-                        <tr>
-                            <td>dergrrggr</td>
-                            <td>dergrrggr</td>
-                            <td>dergrrggr</td>
-                            <td>dergrrggr</td>
-                        </tr>
-                        -->
-                    </tbody>
-                </table>
-            </div>
-
-            <a onclick="buscarNovamente()" class="buscar" href="#">Buscar novamente</a>
-        </div>
+        <a onclick="buscarNovamente()" class="buscar" href="#"
+          >Buscar novamente</a
+        >
+      </div>
     </section>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
